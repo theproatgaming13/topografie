@@ -1,5 +1,7 @@
 <?php
-header('Location: inlog.php');
+if(!isset($_SESSION['login'])){ 
+    header("Location: inlog.php");
+}
 exit();
 ?>
 
